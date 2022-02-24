@@ -1,0 +1,30 @@
+*{
+    font-family:cursive;
+    color: white;
+}
+h1{
+    background-color: black;
+    text-align: left;
+    font-weight: bolder;
+    color: white;
+    padding: 15px;
+}
+span{
+    color: aqua;
+}
+h2{
+    background-color: rebeccapurple;
+    text-align: center;
+    color: white;
+    font-style: italic;
+    font-weight: lighter;
+    padding: 10px;
+
+}
+h3{
+    background-color: rgb(135, 181, 250);
+    text-align: right;
+    color: darkblue;
+    text-decoration: underline;
+    padding: 10px;
+}

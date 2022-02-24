@@ -1,0 +1,16 @@
+div{
+    border: white solid;
+}
+.row{
+    display: flex;
+    background-color: teal;
+}
+.col{
+    flex:1;
+}
+.col-2{
+    flex:2;
+}
+.col-3{
+    flex:3;
+}
