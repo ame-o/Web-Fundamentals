@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+body{
+    background-image: repeat;
+}
+.whole-page{
+    display: flex;
+    flex-direction: column;
+    min-height:min-content;
+}
+/* navigation bar */
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: black;
+    height: 75px;
+    font-family: 'Roboto', sans-serif;
+}
+.nav-title{
+    font-weight: bold;
+    text-shadow:5px 5px #558ABB;
+}
+
+.active{
+    font-weight: bolder;
+}
+.nav-links{
+    display: flex;
+    flex-wrap: row wrap;
+    list-style: none;
+}
+
+.nav-links a{
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+    text-shadow:1px 1px #558ABB;
+}
+.nav-btn{
+    background-color: rgba(84, 86, 221, 0.993);
+    border:solid white;
+    box-shadow: #558ABB 3px 5px;
+    text-shadow:1px 1px #558ABB;
+}
+
+main{
+    display: flex;
+    margin:20px;
+}
+/* styles to apply to body */
+.flex-container {
+    background-image: url(./images/falling\ stars.gif);
+    display: inline-flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: top;
+    width: 100%;
+}
+.blank{
+    flex: .5;
+    background-image: url(./images/R.gif);
+    margin: 2px;
+}
+/*left column container: user*/
+.user {
+    flex: 3;
+    margin: 20px;
+    background-image: url(./images/falling\ stars.gif);
+}
+/*blue user card*/
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: #18334d;
+    border: 2px solid #061c31;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.user-circle {
+    border-radius: 50%;
+    border: 2px solid #fcfcfc;
+}
+.card-header {
+    background-color:black;
+    height: 190px;
+}
+.card-body {
+    margin-top: 30px;
+    padding: 20px;
+}
+.card-body h1, 
+.card-body h2,
+.card-body h3,
+.card-body p {
+    margin: 20px 0px;
+}
+.icon-s {
+    height: 20px;
+}
+
+/*education card*/
+#edu-description{
+    padding:20px;
+    margin: 5px;
+}
+/*right column container: connection*/
+.connection{
+    flex: 2;
+    margin: 20px;
+    font-size: 1.2rem;
+    background-image: url(./images/falling\ stars.gif);
+}
+/*grouping similar classes*/ 
+.exs a{
+    display: flex;
+    background-color: #18334d;
+    border: 2px solid #061c31;
+    padding:10px;
+}
+.edu,
+.reqs,
+.exs{
+    background-color: #18334d;
+    border: 2px solid #061c31;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+#edu-header,
+#reqs-header,
+#exs-header{
+    border: 2px solid #061c31;
+    background-color: black;
+    padding:20px;
+    text-shadow:3px 3px #558ABB;
+}
+#reqs-description,
+#exs-description{
+    padding:5px;
+    margin: 5px;
+}
+span{
+    background-color: #326a9e;
+    border-radius: 50%;
+}
+#faces{
+    border: gray solid 1px;
+    border-radius: 100%;
+    width: 50px;
+}
+a{
+    text-shadow:3px 3px #558ABB;
+}
+.background-element {
+    background: repeat;
