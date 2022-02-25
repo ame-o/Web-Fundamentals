@@ -1,84 +1,96 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
-    text-decoration: none;
-}
-
-/*NAVIGATION BAR */
-.nav{
     color: white;
-    background-color: rgb(3, 3, 3);
-    display: flex;
-    flex: wrap;
-    justify-content: space-around;
-    margin: 5px;
-    width: 100%;
 }
-.nav-bar{
-    color:white;
+body{
+    background-image: repeat;
+}
+.whole-page{
+    display: flex;
+    flex-direction: column;
+    min-height:min-content;
+}
+/* navigation bar */
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: black;
+    height: 75px;
+    font-family: 'Roboto', sans-serif;
 }
 .nav-title{
     font-weight: bold;
-    display: flex;
-    
+    text-shadow:5px 5px #558ABB;
 }
+
 .active{
     font-weight: bolder;
 }
 .nav-links{
     display: flex;
+    flex-wrap: row wrap;
     list-style: none;
 }
-.nav li{
+
+.nav-links a{
     padding: 5px 10px 5px 10px;
+    text-decoration: none;
+    text-shadow:1px 1px #558ABB;
 }
-.navbtn{
-    background-color: rgba(84, 200, 221, 0.993);
-    border: black solid;
-    box-shadow: black 3px 5px;
-    justify-content: flex-end;
+.nav-btn{
+    background-color: rgba(84, 86, 221, 0.993);
+    border:solid white;
+    box-shadow: #558ABB 3px 5px;
+    text-shadow:1px 1px #558ABB;
 }
 
-
+main{
+    display: flex;
+    margin:20px;
+}
 /* styles to apply to body */
-    
-.flex .container div {
-    display:inline-flex;
+ 
+.flex-container {
+    background-image: url(./images/falling\ stars.gif);
+    display: inline-flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: #f3f3f3;
-    margin: 20px;
-    padding: 20px;
+    justify-content:flex-start;
+    align-items: top;
     width: 100%;
 }
 
+.blank{
+    flex: .5;
+    background-image: url(./images/R.gif);
+    margin: 2px;
+}
 .user {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: top;
-    width:50%;
+    flex: 3;
+    margin: 20px;
+    background-image: url(./images/falling\ stars.gif);
 }
 /*blue user card*/
 .card {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
-    color: black;
-    background-color: #fff;
-    border: 2px solid #999;
-    margin-bottom: 20px;
+    background-color: #18334d;
+    border: 2px solid #061c31;
     font-size: 1.2rem;
 }
 .user-circle {
     border-radius: 50%;
-    border: 2px solid #999;
-    background-color: #fff;
+    border: 2px solid #fcfcfc;
 }
 .card-header {
-    background-color: #17a2b8;
+    background-color:black;
+    height: 190px;
 }
 .card-body {
+    margin-top: 30px;
     padding: 20px;
 }
 .card-body h1, 
@@ -90,74 +102,83 @@
 .icon-s {
     height: 20px;
 }
-
-#gear{
-    color: #3a81e6;
+.card a{
+    text-shadow:3px 3px #558ABB;
 }
-
 .edu{
-    display: inline-flex;
-    flex-direction: column;
-    color: black;
-    background-color: #fff;
-    border: 2px solid #999;
-    margin-bottom: 20px;
+    background-color: #18334d;
+    border: 2px solid #061c31;
+    margin-top: 20px;
     font-size: 1.2rem;
+}
+#edu-header{
+    border: 2px solid #061c31;
+    background-color: black;
+    padding:20px;
+    text-shadow:3px 3px #558ABB;
+}
+#edu-description{
+    padding:20px;
+    margin: 5px;
 }
 /*right columns*/
 .connection{
-    display: inline-flex;
-    flex-direction: column;
-    align-items: top;
-    color: black;
+    flex: 2;
     background-color: #fff;
-    margin-bottom: 20px;
+    margin: 20px;
     font-size: 1.2rem;
-    width: 30%;
+    background-image: url(./images/falling\ stars.gif);
 }
 
 .reqs{
-    display: inline-flex;
-    flex-direction: column;
-    color: black;
-    background-color: #fff;
-    border: 2px solid #999;
+    background-color: #18334d;
+    border: 2px solid #061c31;
     margin-bottom: 20px;
     font-size: 1.2rem;
 }
+#reqs-header{
+    border: 2px solid #061c31;
+    background-color: black;
+    padding:20px;
+    text-shadow:3px 3px #558ABB;
+}
+#reqs-description{
+    padding:5px;
+    margin: 5px;
+/*can i add anything?*/
+}
 .exs{
-    display: inline-flex;
-    flex-direction: column;
-    color: black;
-    background-color: #fff;
-    border: 2px solid #999;
-    margin-bottom: 20px;
+    background-color: #18334d;
+    border: 2px solid #061c31;
+    margin-top: 20px;
     font-size: 1.2rem;
 }
 #exs-header{
-    border: 2px solid #999;
-    background-color: grey;
+    border: 2px solid #061c31;
+    background-color: black;
     padding:20px;
+    text-shadow:3px 3px #558ABB;
 }
-#reqs-header{
-    border: 2px solid #999;
-    background-color: grey;
-    padding:20px;
-}
-#edu-header{
-    border: 2px solid #999;
-    background-color: grey;
-    padding:20px;
+#exs-description{
+    padding:5px;
+    margin: 5px;
 }
 span{
-    background-color: azure;
+    background-color: #326a9e;
     border-radius: 50%;
-}
-.exs a{
-    border: 2px solid #999;
 }
 #faces{
     border: gray solid 1px;
     border-radius: 100%;
     width: 50px;
 }
+.exs a{
+    display: flex;
+    background-color: #18334d;
+    border: 2px solid #061c31;
+    padding:10px;
+    text-shadow:3px 3px #558ABB;
+}
+
+.background-element {
+    background: repeat;
