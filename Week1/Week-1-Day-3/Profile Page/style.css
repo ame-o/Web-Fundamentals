@@ -1,104 +1,163 @@
 *{
+    margin: 0;
+    padding: 0;
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
-    color:white;
 }
 
+/*NAVIGATION BAR */
 .nav{
+    color: white;
     background-color: rgb(3, 3, 3);
     display: flex;
-    align-items: center;
-    justify-content:center;
-    padding:5px;
+    flex: wrap;
+    justify-content: space-around;
+    margin: 5px;
+    width: 100%;
 }
-.navbar{
+.nav-bar{
+    color:white;
+}
+.nav-title{
+    font-weight: bold;
     display: flex;
-    align-items: center;
-    justify-content:center;
-    padding:5px;
+    
 }
-    .nav-title{
-        font-weight: bold;
-        display: flex;
+.active{
+    font-weight: bolder;
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+}
+.nav li{
+    padding: 5px 10px 5px 10px;
+}
+.navbtn{
+    background-color: rgba(84, 200, 221, 0.993);
+    border: black solid;
+    box-shadow: black 3px 5px;
+    justify-content: flex-end;
+}
 
-    }
-    .nav-links{
-        display: flex;
-        list-style: none;
-    }
-    .active{
-        font-weight: bolder;
-    }
-    li{
-        padding: 5px 10px 5px 10px;
-    }
-    .navbtn{
-        background-color: rgba(84, 200, 221, 0.993);
-        border: black solid;
-        box-shadow: black 3px 5px;
-        justify-content: flex-end;
-    }
 
-    * {
-        margin: 0;
-        padding: 0;
-    }
+/* styles to apply to body */
     
-    /* styles to apply to body */
-    
-    body {
-        background-color: #f3f3f3;
-        font-family: 'Roboto', sans-serif;
-    }
-    
-    .flex-container {
-        width: 1000px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    .user-card {
-        width: 100%;
-        background-color: #fff;
-        border: 2px solid #999;
-        margin-bottom: 20px;
-        border-radius: 5px;
-        font-size: 1.2rem;
-        overflow: hidden;
-    }
-    
-    .card-header {
-        background-color: #17a2b8;
-        height: 125px;
-        margin-bottom: 70px;
-    }
-    
-    .card-body {
-        padding: 20px;
-    }
-    
-    .card-body h1, 
-    .card-body h2,
-    .card-body h3,
-    .card-body p {
-        margin: 20px 0px;
-    }
-    
-    .avatar-m {
-        border-radius: 50%;
-        background-color: #fff;
-        height: 190px;
-        padding: 5px;
-        margin-top: 20px;
-        margin-left: 20px;
-    }
-    
-    .icon-s {
-        height: 20px;
-    }
-    
-    a {
-        color: #3a81e6;
-    }
+.flex .container div {
+    display:inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f3f3;
+    margin: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+.user {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: top;
+    width:50%;
+}
+/*blue user card*/
+.card {
+    display: inline-flex;
+    flex-direction: column;
+    color: black;
+    background-color: #fff;
+    border: 2px solid #999;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+.user-circle {
+    border-radius: 50%;
+    border: 2px solid #999;
+    background-color: #fff;
+}
+.card-header {
+    background-color: #17a2b8;
+}
+.card-body {
+    padding: 20px;
+}
+.card-body h1, 
+.card-body h2,
+.card-body h3,
+.card-body p {
+    margin: 20px 0px;
+}
+.icon-s {
+    height: 20px;
+}
+
+#gear{
+    color: #3a81e6;
+}
+
+.edu{
+    display: inline-flex;
+    flex-direction: column;
+    color: black;
+    background-color: #fff;
+    border: 2px solid #999;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+/*right columns*/
+.connection{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: top;
+    color: black;
+    background-color: #fff;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    width: 30%;
+}
+
+.reqs{
+    display: inline-flex;
+    flex-direction: column;
+    color: black;
+    background-color: #fff;
+    border: 2px solid #999;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+.exs{
+    display: inline-flex;
+    flex-direction: column;
+    color: black;
+    background-color: #fff;
+    border: 2px solid #999;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+#exs-header{
+    border: 2px solid #999;
+    background-color: grey;
+    padding:20px;
+}
+#reqs-header{
+    border: 2px solid #999;
+    background-color: grey;
+    padding:20px;
+}
+#edu-header{
+    border: 2px solid #999;
+    background-color: grey;
+    padding:20px;
+}
+span{
+    background-color: azure;
+    border-radius: 50%;
+}
+.exs a{
+    border: 2px solid #999;
+}
+#faces{
+    border: gray solid 1px;
+    border-radius: 100%;
+    width: 50px;
+}

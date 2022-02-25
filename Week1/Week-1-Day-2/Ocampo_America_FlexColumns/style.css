@@ -2,7 +2,7 @@ div{
     border: white solid;
 }
 .row{
-    display: flex;
+    display: block;
     background-color: teal;
 }
 .col{
