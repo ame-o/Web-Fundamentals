@@ -31,3 +31,20 @@
         box-shadow: black 3px 5px;
         justify-content: flex-end;
     }
+
+.flex-container{
+    display: flex;
+    align-items: row;
+}
+.user{
+    flex:4;
+    padding: 15px;
+    width:100%;
+    background-color: orange;
+}
+.connection{
+    flex:3;
+    padding: 15px;
+    width:100%;
+    background-color: red;
+}
