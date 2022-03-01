@@ -76,8 +76,27 @@ button{
     color: white;
     padding: 5px;
 }
-main button{
+/*.btn{
     background-color: rgb(255, 208, 0);
     border: black 1px solid;
     padding: 5px;
-}
+}*/
+.btn {
+    background: #3498db;
+    border-radius: 0px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 2px 2px 2px 2px;
+    text-decoration: none;
+    height: 30px;
+    width: 70px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: block;
+  }
+
+.btn:active {
+    background-color: #cecece;
+    text-decoration: none;
+  }

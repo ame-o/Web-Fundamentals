@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <title>Liking Likes</title>
 </head>
 <body>
     <div= class="whole-page">
-        <div class="blank">BLANK</div>
+        <div class="blank"></div>
         <main>
+            <!--navigation bar-->
         <div class="nav">
             <div class="nav-bar1">
                 <h1>Network</h1>
@@ -19,6 +20,7 @@
                 <h1>Your Feed</h1>
             </div>
         </div>
+        <!--columns-->
         <div class="c-holder">
             <div class="l-col"> 
                 <div class="l-1">
@@ -30,36 +32,41 @@
             <div class="r-col">
                 <div class="r-1">
                     <div class="name-likes">
-                        <p>First Name</p>
-                        <button id="Like1"></button>
+                        <h2>MY MOM</h2>
+                        <p id="countOne"> 0 like(s)</p>
+                        <button onclick ="add1()" id="btn1">Like</button>
                     </div>
-                    <div class="lorem">
+                    <div id="lorem">
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, autem.</p>
                         <a href="">LINK</a>
                     </div>
                 </div>
                 <div class="r-2">
                     <div class="name-likes">
-                        <p>First Name</p>
-                        <button id="Like1"></button>
+                        <h2>YOUR MOM</h2>
+                        <p id="countTwo"> 0 like(s)</p>
+                        <button onclick ="add2()" id="btn2">Like</button>
                     </div>
-                    <div class="lorem">
-                        <p>Lorem, ipsum dolor sit <a href="">LINK</a> amet consectetur adipisicing elit. Culpa, autem.</p>
+                    <div id="lorem">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, autem.</p>
+                        <a href="">LINK</a>
                     </div>
                 </div>
                 <div class="r-3">
                     <div class="name-likes">
-                        <p>First Name</p>
-                        <button id="Like1"></button>
+                        <h2>THEIR MOM</h2>
+                        <p id="countThree"> 0 like(s)</p>
+                        <button onclick ="add3()" id="btn3">Like</button>
                     </div>
-                    <div class="lorem">
-                        <p>Lorem, ipsum dolor sit <a href="">LINK</a> amet consectetur adipisicing elit. Culpa, autem.</p>
+                    <div id="lorem">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, autem.</p>
+                        <a href="">LINK</a>
                     </div>
                 </div>
             </div>
         </div>
         </main>
-        <div class="blank">BLANK</div>
+        <div class="blank"></div>
         </div>
     <script src="./script.js"></script>
 </body>
