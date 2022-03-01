@@ -30,14 +30,14 @@
             <div class="blank">
                 
             </div>
-            <!-- user info card -->
+<!-- user info card -->
             <div class="user">
                 <div class="card">
                     <div class="card-header">
                         <img src="./images/jane-m.jpg" alt class="user-circle">
                     </div>
                     <div class="card-body">
-                        <h1>Jane Doe</h1>
+                        <h1 id="nameA">Jane Doe</h1>
                         <h3>
                             <img src="icons/map-marker.png" alt="pin" class="icon-s"> 
                             Seattle
@@ -45,7 +45,7 @@
                         <p>Developer | Engineer | Problem Solver<br>
                         Master of shadows and the Internet!</p>
                         <p>
-                            <a href="#">
+                            <a id= "edit" href="#" onmousedown="nameChange()">
                                 <img src="icons/gear.png" alt="gear" class="icon-s"> 
                                 edit profile
                             </a>
@@ -70,23 +70,39 @@
                         <p>Connection Requests</p>
                     </div>
                     <div id="reqs-description">
-                        <h3>
-                        <img src="./images/todd-s.jpg" alt id="faces">
-                        Todd E
-                        <img src="./icons/accept-circle.png" alt class="icon-s">
-                        <img src="./icons/close-circle.png" alt class="icon-s">
+                        <h3 id="fwiendT">
+                            <img src="./images/todd-s.jpg" alt id="faces">
+                            Todd E
+                            <img
+                            onclick="hideT(),addFriends()"
+                            class="icon-s" 
+                            src="./icons/accept-circle.png" 
+                            alt="fwiend1A" >  
+                            <img 
+                            onclick="hideT(),loseFriends()" 
+                            class="icon-s"
+                            src="./icons/close-circle.png" 
+                            alt ="fwiend1D">
                         </h3>
-                        <h3>
-                        <img src="./images/phil-s.jpg" alt id="faces">
-                        Phil K
-                        <img src="./icons/accept-circle.png" alt class="icon-s">
-                        <img src="./icons/close-circle.png" alt class="icon-s">
+                        <h3 id="fwiendP">
+                            <img src="./images/phil-s.jpg" alt id="faces">
+                            Phil K
+                            <img
+                            onclick="hideP(),addFriends()"
+                            class="icon-s" 
+                            src="./icons/accept-circle.png" 
+                            alt="fwiend1A" >  
+                            <img 
+                            onclick="hideP(),loseFriends()" 
+                            class="icon-s"
+                            src="./icons/close-circle.png" 
+                            alt ="fwiend1D">
                         </h3>
                     </div>
                 </div>
                 <div class="exs">
                     <div id="exs-header">
-                        <p><span>500+</span>Your Connections</p>
+                        <p><span id="exFriends">500</span>Your Connections</p>
                     </div>
                     <div id="exs-description">
                         <p>
@@ -111,5 +127,6 @@
         </div>
     </main>
 </div>   
+<script src="./script.js"></script>
 </body>
 </html>
