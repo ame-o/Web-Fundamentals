@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+}
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 10px;
+    padding: 20px;
+    background-color: gray;
+    width: 66.6%;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: top;
+    margin-top: 20px;
+}
+.blank{
+    flex:1;
+}
+.left-col{
+    flex:2.5;
+}
+.right-col{
+    flex:2;
+}
+.left-1,.left-2{
+    border: 3px solid black;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+}
+.right-1{
+    border: 3px solid black;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.left-on-left{
+    padding: 10px;
+    justify-content: space-evenly;
+}
+.def{   
+    margin: 20px;
+    justify-content: left;
+}
+
+span{
+    font-style: italic;
+}
+button{
+    border: 1px black solid;
+    box-shadow: 3px 3px black;
+}
+#login{
+    background-color: rgb(11, 98, 238);
+    color: white;
+    padding: 5px;
+}
+main button{
+    background-color: rgb(255, 208, 0);
+    border: black 1px solid;
+    padding: 5px;
+}
