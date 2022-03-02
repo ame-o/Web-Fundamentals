@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>EasyBay</title>
+</head>
+
+<body>
+    <!-- /* navigation bar */ -->
+    <div class="nav1 flex">
+        <div class="nav1title flex">
+            <img src="./images/assets/leaf.png" alt="leaf" id="leaf">
+            <h1>EasyBay</h1>
+            <textarea name="search" id="search" cols="40" rows="1">Search for anything
+            </textarea>
+            <button>Sign In</button>
+            <img onclick="alert('Your cart is empty!')" src="./images/assets/cart-dark.png" alt="cart" id="cart">
+        </div>
+        <div class="nav1options flex">
+            <p>Aeonium</p>
+            <p>Anormischus</p>
+            <p>Agave</p>
+            <p>Aloe</p>
+            <p>Aristaloe</p>
+            <p>More...</p>
+        </div>
+    </div>
+    <div class="nav2 flex">
+        <h1>Your Source for Serious Succulent Specialties</h1>
+    </div>
+    <!-- container for main page -->
+    <div class="whole-page flex">
+        <div class="blank"></div>
+        <!-- main page -->
+        <main>
+            <div class="row1 rows flex">
+                <div class="columns flex">
+                    <div class="leftcol flex">
+                        <div class="l-1">
+                            <h2>Discover succulent varieties one pot or rack at a time!</h2>
+                            <h2>Discover <img src="./images/assets/arrow-light.png" alt="arrow" class="arrow"></h2>
+                        </div>
+                        <div class="l-2">
+                            <div class="succulent" onmouseover="over(succsdos)" onmouseout="out(succsuno))">
+                                <img src="./images/assets/succulents-1.jpg" class="succulent"
+                                    onmouseover="over(succsdos)" onmouseout="out(succsuno))" alt="succsuno"
+                                    id="succsuno">
+                                <img src="./images/assets/succulents-2.jpg" class="succulent"
+                                    onmouseover="over(succsdos)" onmouseout="out(succsuno))" alt="succsdos"
+                                    id="succsdos">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rightcol flex">
+                        <div class="r-1">
+                            <img src="./images/assets/aloe-m.jpg" alt="aloe-m">
+                        </div>
+                        <div class="r-2">
+                            <p>Soothing aloe <img src="./images/assets/arrow-light.png" alt="arrow" class="arrow"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row2 rows flex">
+                <p class="rowplants flex"><img src="./images/assets/aeonium-s.jpg" alt="aeonium" class="rowplants">
+                    Aeonium</p>
+                <p class="rowplants flex"><img src="./images/assets/aloe-s.jpg" alt="Agave" class="rowplants">Agave</p>
+                <p class="rowplants flex"><img src="./images/assets/cactus-s.jpg" alt="Cactus" class="rowplants">Cactus
+                </p>
+                <p class="rowplants flex"><img src="./images/assets/echeveria-s.jpg" alt="Echeveria"
+                        class="rowplants">Echeveria</p>
+                <p class="rowplants flex"><img src="./images/assets/sedum-s.jpg" alt="Sedum" class="rowplants">Sedum</p>
+                <p class="rowplants flex"><img src="./images/assets/sempervivum-s.jpg" alt="Sempervivum"
+                        class="rowplants">Sempervivum</p>
+            </div>
+            <div class="popup flex" id="popups">
+                <img src="./images/assets/alert-dark.png" alt="alertimg">
+                <p>This site makes use of third-party cookies, by clicking "I accept" you agree to the terms outlined in
+                    our <a href="">cookie policy.</a></p>
+                <button onclick="remove(popups)">I Accept</button>
+            </div>
+        </main>
+        <div class="blank"></div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

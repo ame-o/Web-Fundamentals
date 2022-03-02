@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+/*stopped at 45mins/1:30*/
+.container{
+    width:800px;
+    margin:0 auto;
+}
+.flex{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    gap: 1.5em;
+}
+/* navigation bar*/
+nav{
+    background-color: aqua;
+    color:white;
+    padding: 1em 0;
+    padding:10px;
+}
+nav ul{
+    list-style: none;
+}
+/*main page*/
+main{
+    padding: 50px;
+}
+.main-header{
+    background-color: bisque;
+    min-height:50px;
+    border-bottom: 3px solid gray;
+    margin-bottom: 10px;;
+}
+
+.col{
+    flex:1;
+    min-height: 300px;
+    text-align: center;
+    padding:10px 0 0;
+    background-color: #eeeeee;
+}
+.col img{
+    width:150px;
+    border-radius:50%;
+}
+.col>*{
+    margin:10px;
+}
+.red,.blue{
+    font-weight:bold;
+    font-size: large;
+}
+.red{
+    color:red;
+}
+.blue{
+    color: blue;
+}
+.cookie{
+    border:3px solid black;
+    padding: 20px;
+    margin-top: 10px;
+    position: fixed;
+    bottom:0;
+    width:700px;
+    background-color: white;
+}
+.cookie button{
+    white-space: nowrap;
+    background-color: blue;
+    padding: 5px;
+}

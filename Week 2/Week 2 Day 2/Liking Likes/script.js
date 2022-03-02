@@ -26,8 +26,12 @@ function add3(){
 }
 
 //alternatively:
-//HTML <span> # of likes 
-function like(element){
+//HTML <span> interger </span>
+//HTML needs to call function with the id as the parameter
+//query.selector can call class or id but works best with ID
+//when q.s calls class, it only brings back the 1st it finds
+//
+function addLike(element){
     var counter = document.querySelector(element);
     var count= counter.innerText;
     count++;

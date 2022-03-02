@@ -10,26 +10,85 @@
 </head>
 
 <body>
-    <div class="whole-page">
-        <!-- navigation bar -->
-        <div class="nav">
-            <h1>NAV</h1>
-            <a href=""></a>
-            <button></button>
+    <!-- navigation bar -->
+    <div class="nav1">
+        <h1>DojoWeather</h1>
+        <div class="cities-nav1">
+            <h2>
+                <a onclick="alert('hello')">Burbank</a>
+                <a onclick="alert('hello')">Chicago</a>
+                <a onclick="alert('hello')">Dallas</a>
+            </h2>
         </div>
+    </div>
+    <div class="title-nav2">
+        <div class=""title-nav2>
+            <h1>San Jose</h1>
+        </div>
+        <div class="right-nav2">
+            <p>show temperature in
+                <select name="weather" id="weather">
+                    <option value="Faranheit">F&deg</option>
+                    <option value="Celsius">C&deg</option>
+                </select>
+            </p>
+        </div>
+    </div>
+    <div class="whole-page">
+        <div class="blank">BLANK</div>
         <main>
             <!-- columns -->
             <div class="c-wrap">
-                <div class="blank">BLANK</div>
-                <div class="l-col">L-COL
-                    <div class="l-1">L-1</div>
+                <div class="col">
+                    <h1>Today</h1>
+                    <img src="./assets (1)/assets/some_rain.png" alt="pics">
+                    <p>some rain</p>
+                    <div class="degrees">
+                        <p>red&deg</p>
+                        <p>blue&deg</p>
+                    </div>
                 </div>
-                <div class="r-col">R-COL
-                    <div class="r-1">R-1</div>
+                <div class="col">
+                    <h1>Tomorrow</h1>
+                    <img src="./assets (1)/assets/some_sun.png" alt="pics">
+                    <p>some sun</p>
+                    <div class="degrees">
+                        <p>red&deg</p>
+                        <p>blue&deg</p>
+                    </div>
                 </div>
-                <div class="blank">BLANK</div>
+                <div class="col">
+                    <h1>Friday</h1>
+                    <img src="./assets (1)/assets/some_clouds.png" alt="pics">
+                    <p>some clouds</p>
+                    <div class="degrees">
+                        <p>red&deg</p>
+                        <p>blue&deg</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <h1>Saturday</h1>
+                    <img src="./assets (1)/assets/some_sun.png" alt="pics">
+                    <p>some sun</p>
+                    <div class="degrees">
+                        <p>red&deg</p>
+                        <p>blue&deg</p>
+                    </div>
+                </div>
+            </div>
+            <div class="popup">
+                <div class="left-popup">
+                    <img src="./assets (1)/assets/cookie.png" alt="cookie">
+                </div>
+                <div class="right-popup">
+                    <h3>Stop! Cookie time</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem nam excepturi, quasi labore sit
+                        quidem aut quam eaque aspernatur voluptas?<a href="">Read more...</a></p>
+                </div>
+                <button onclick="hide('.popup')">I Accept</button>
             </div>
         </main>
+        <div class="blank">BLANK</div>
     </div>
     <script src="./script.js"></script>
 </body>

@@ -2,9 +2,15 @@
     margin: 0 auto;
     padding: 0 auto;
 }
-.whole-page{
+.flex{
     display:flex;
+}
+.whole-page{
     flex-direction: row;
+}
+.nav{
+    flex:1;
+    background-color: blue;
 }
 .blank{
     background-color: beige;
@@ -13,20 +19,15 @@
 main{
     flex: 5;
 }
-.nav{
-    flex:1;
-    background-color: blue;
-}
-.c-wrap{
-    display: flex;
+.columns{
     flex-direction: row;
     flex:1;
 }
-.l-col{
+.leftcol{
     background-color: brown;
     flex:3;
 }
-.r-col{
+.rightcol{
     flex:2;
     background-color: blueviolet;
 }

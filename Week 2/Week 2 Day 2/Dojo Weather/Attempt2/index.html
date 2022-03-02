@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Dojo Weather 2</title>
+</head>
+<body>
+<!-- navigation bar -->
+    <nav>
+        <div class="container flex">
+            <h1>DojoWeather</h1>
+            <ul class="flex">
+                <li onclick="alert('Loading weather report...')">Burbank</li>
+                <li onclick="alert('Loading weather report...')">Chicago</li>
+                <li onclick="alert('Loading weather report...')">Dallas</li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container">
+        <div class="main-header flex">
+            <h2>San Jose</h2>
+            <form>
+                <label for="tempType">show temperature in</label>
+                <select id="tempType" onchange="changeTemp(this)">
+                    <option>C&deg</option>
+                    <option>F&deg</option>
+                </select>
+            </form>
+        </div>
+        <div class="columns flex">
+            <div class="col">
+                <h3>Today</h3>
+                <img src="./assets (1)/assets/some_rain.png" alt="some rain">
+                <p>some rain</p>
+                <div class="red-and-blue flex">
+                    <p><span class="red" id="temp1">24</span>&deg</p>
+                    <p><span class="blue" id="temp2">18</span>&deg</p>
+                </div>
+            </div>
+            <div class="col">
+                <h3>Tomorrow</h3>
+                <img src="./assets (1)/assets/some_sun.png" alt="some sun">
+                <p>some sun</p>
+                <div class="red-and-blue flex">
+                <p><span class="red" id="temp3">27</span>&deg</p>
+                <p><span class="blue" id="temp4">19</span>&deg</p>
+                </div>
+            </div>
+            <div class="col">
+                <h3>Friday</h3>
+                <img src="./assets (1)/assets/some_clouds.png" alt="some clouds">
+                <p>some clouds</p>
+                <div class="red-and-blue flex">
+                    <p><span class="red" id="temp5">21</span>&deg</p>
+                    <p><span class="blue" id="temp6">16</span>&deg</p>
+                </div>
+            </div>
+            <div class="col">
+                <h3>Saturday</h3>
+                <img src="./assets (1)/assets/some_sun.png" alt="some sun">
+                <p>some sun</p>
+                <div class="red-and-blue flex">
+                    <p><span class="red" id="temp7">26</span>&deg</p>
+                    <p><span class="blue" id="temp8">21</span>&deg</p>
+                </div>
+            </div>
+        </div>
+        <div class="cookie flex" id="cookiepopup">
+            <img src="./assets (1)/assets/cookie.png" alt="cookie">
+            <div class="cookie-popup">
+                <h4>Stop! Cookie Time</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, necessitatibus quis enim ullam voluptatum tenetur quasi commodi erro
+                    <a href="">Read more...</a></p>
+            </div>
+            <button onclick="remove(cookiepopup)">I Accept</button>
+        </div>
+    </main>
+<script src="./script.js"></script>
+</body>
+</html>
