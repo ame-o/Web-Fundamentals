@@ -66,6 +66,7 @@
 main{
     flex: 4;
     flex-direction: row;
+    align-items: top;
 }
 .rows{
     flex:1;
@@ -93,21 +94,21 @@ main{
     width: 200px;
     height: 190px;
 }
-
+/*not sure how to hover*/
 .succulent {
     width: 250px;
     padding-top:5px;
     position: relative;
     display: inline-block;
 }
-.succulent #succsuno {
+.succulent #succsdos {
     display: none;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 99;
 }
-.succulent:hover #succsdos{
+.succulent:hover #succsuno{
     display: inline;
 }
 .arrow{
